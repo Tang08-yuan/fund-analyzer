@@ -1,0 +1,156 @@
+.ranking-panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
+
+.ranking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ranking-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.mode-switch {
+  display: flex;
+  gap: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  padding: 6px 16px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+  border-right: 1px solid #e8e8e8;
+}
+
+.mode-btn:last-child {
+  border-right: none;
+}
+
+.mode-btn.active {
+  background: #1677ff;
+  color: #fff;
+}
+
+/* 权重配置 */
+.weight-config {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.weight-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.weight-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.level-hint {
+  font-size: 11px;
+  color: #999;
+  flex: 1;
+}
+
+/* 权重项目（新版：高/中/低选择） */
+.weight-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weight-item-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.weight-item-v2:hover {
+  border-color: #d9d9d9;
+}
+
+.weight-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.weight-label {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+}
+
+.weight-dir {
+  font-size: 11px;
+  color: #999;
+}
+
+/* 高/中/低 选择器 */
+.level-selector {
+  display: flex;
+  gap: 4px;
+}
+
+.level-btn {
+  padding: 5px 14px;
+  border: 2px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+  min-width: 40px;
+}
+
+.level-btn:hover {
+  border-color: #bfbfbf;
+}
+
+.level-btn.high.active {
+  background: #f6ffed;
+  color: #389e0d;
+  border-color: #389e0d;
+  font-weight: 700;
+}
+
+.level-btn.mid.active {
+  background: #fffbe6;
+  color: #d48806;
+  border-color: #d48806;
+  font-weight: 700;
+}
+
+.level-btn.low.active {
+  background: #fff2f0;
+  color: #cf1322;
+  border-color: #cf1322;
+  font-weight: 700;
+}

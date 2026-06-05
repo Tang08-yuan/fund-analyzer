@@ -1,0 +1,306 @@
+.user-panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user-header h3 { margin: 0; font-size: 16px; color: #1a1a1a; }
+
+.user-tabs { display: flex; gap: 0; border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden; }
+
+.tab-btn {
+  padding: 6px 16px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.tab-btn:last-child { border-right: none; }
+.tab-btn.active { background: #1677ff; color: #fff; }
+
+/* 保存方案 */
+.save-plan {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.save-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.save-input:focus { border-color: #1677ff; }
+
+/* 方案列表 */
+.plans-list, .history-section, .favorites-section { min-height: 100px; }
+
+.empty-plans {
+  text-align: center;
+  padding: 32px 16px;
+  color: #999;
+}
+
+.plan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.15s;
+}
+
+.plan-item:hover { border-color: #1677ff; background: #fafcff; }
+
+.plan-info { display: flex; flex-direction: column; gap: 4px; }
+
+.plan-name { font-weight: 600; font-size: 14px; color: #333; }
+.plan-meta { font-size: 12px; color: #999; }
+
+.plan-actions { display: flex; gap: 8px; }
+
+.btn-text.danger { color: #ff4d4f; }
+.btn-text.danger:hover { background: #fff1f0; }
+.btn-text.small { font-size: 11px; padding: 2px 6px; }
+
+/* 历史 */
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+.history-grid { display: flex; flex-direction: column; gap: 16px; }
+
+.history-block h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.history-item:hover { background: #fafafa; }
+
+.hi-time { color: #999; font-size: 12px; min-width: 140px; }
+.hi-desc { color: #333; flex: 1; }
+.hi-code { color: #bbb; font-size: 11px; }
+
+/* ========== 自选基金 ========== */
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #666;
+}
+
+.favorites-header-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.favorite-fund-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fafcff;
+  border-left: 4px solid #fa8c16;
+}
+
+.fav-fund-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fav-fund-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.fav-fund-clickable {
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: -4px -8px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.fav-fund-clickable:hover {
+  background: #f0f7ff;
+}
+
+.fav-fund-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.fav-star { font-size: 18px; }
+
+.fav-fund-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fav-fund-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.fav-fund-code {
+  font-size: 11px;
+  color: #999;
+}
+
+.fav-fund-metrics {
+  display: flex;
+  gap: 16px;
+  margin-right: 16px;
+}
+
+.fav-metric {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.fav-metric.positive { color: #52c41a; }
+.fav-metric.negative { color: #ff4d4f; }
+
+/* 新闻区域 */
+.fav-fund-news {
+  padding: 14px 16px;
+  background: #fafafa;
+}
+
+.news-title {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.news-loading, .news-empty {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.news-item {
+  display: block;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s;
+}
+
+.news-item:hover {
+  border-color: #1677ff;
+  background: #f0f7ff;
+  box-shadow: 0 2px 6px rgba(22,119,255,0.08);
+}
+
+.news-item-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.news-item-summary {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.news-item-meta {
+  font-size: 11px;
+  color: #999;
+}
+
+/* ========== 自选预测徽标 ========== */
+
+.fav-predict-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: linear-gradient(135deg, #f6ffed, #f0f7ff);
+  border: 1px solid #d9e8d9;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.fav-predict-icon { font-size: 14px; }
+
+.fav-predict-return {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.fav-predict-conf {
+  font-size: 11px;
+  opacity: 0.8;
+}

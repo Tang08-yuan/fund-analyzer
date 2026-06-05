@@ -1,0 +1,393 @@
+.fund-detail {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #1677ff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 0;
+  margin-bottom: 16px;
+}
+
+.btn-back:hover { text-decoration: underline; }
+
+/* ========== 基础信息头 ========== */
+
+.detail-header {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.detail-title-row h2 { margin: 0; font-size: 20px; color: #1a1a1a; }
+
+.fund-type-tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #e6f0ff;
+  color: #1677ff;
+}
+
+.risk-tag {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #fff7e6;
+  color: #fa8c16;
+}
+
+.detail-subtitle {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.detail-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.detail-value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 12px;
+  background: #f6f9ff;
+  border-radius: 10px;
+  border: 1px solid #e8f0fe;
+}
+
+.detail-value-label { font-size: 12px; color: #999; margin-bottom: 4px; }
+.detail-value-num { font-size: 22px; font-weight: 700; color: #1677ff; }
+
+/* ========== 核心指标双栏 ========== */
+
+.detail-core-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* ========== 次要信息双栏（雷达图 + 费用） ========== */
+
+.detail-secondary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* ========== 通用卡片 ========== */
+
+.detail-section {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.detail-section.chart-section { background: #fff; border: 1px solid #f0f0f0; }
+
+.detail-section h4 { margin: 0 0 12px; font-size: 14px; color: #333; }
+
+.detail-table {
+  width: 100%;
+  font-size: 13px;
+}
+
+.detail-table td {
+  padding: 6px 0;
+}
+
+.dt-label { color: #666; width: 100px; }
+.dt-value { font-weight: 600; color: #333; text-align: right; }
+
+.detail-table .total-row td {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 8px;
+  font-weight: 700;
+}
+
+/* ========== 规模与持仓（全宽） ========== */
+
+.detail-holdings {
+  margin-bottom: 24px;
+}
+
+.holdings-content {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 14px;
+}
+
+.holdings-stat, .holdings-top10 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.holdings-label { font-size: 12px; color: #999; }
+.holdings-value { font-size: 18px; font-weight: 700; color: #1677ff; }
+.holdings-stocks { font-size: 13px; color: #333; line-height: 1.6; max-width: 500px; }
+
+.sector-bars { display: flex; flex-direction: column; gap: 6px; }
+.sector-bar-item { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.sector-name { width: 56px; color: #555; }
+.sector-bar-bg { flex: 1; height: 10px; background: #e8e8e8; border-radius: 5px; overflow: hidden; }
+.sector-bar-fill { height: 100%; background: linear-gradient(90deg, #1677ff, #69b1ff); border-radius: 5px; transition: width 0.5s; }
+.sector-pct { width: 40px; color: #999; text-align: right; }
+
+/* ========== 走势图分隔线 ========== */
+
+.detail-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0 16px;
+  color: #bbb;
+  font-size: 12px;
+}
+
+.detail-divider::before,
+.detail-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #f0f0f0;
+}
+
+.detail-divider span {
+  padding: 0 16px;
+  white-space: nowrap;
+}
+
+/* ========== AI 趋势预测面板 ========== */
+
+.predict-panel {
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #fafcff, #f6f9ff);
+  border: 1px solid #e0e8f0;
+}
+
+.predict-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.predict-panel-header h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.predict-panel-empty {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 13px;
+}
+
+.predict-panel-empty p { margin: 0; }
+
+/* 主预测区 */
+.predict-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.predict-direction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.direction-up { border-color: #b7eb8f; background: #f6ffed; }
+.direction-down { border-color: #ffa39e; background: #fff1f0; }
+.direction-flat { border-color: #ffe58f; background: #fffbe6; }
+
+.predict-dir-icon { font-size: 28px; }
+
+.predict-dir-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.predict-expected {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+/* 置信度条 */
+.predict-confidence {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.predict-conf-label {
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+}
+
+.predict-conf-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.predict-conf-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.conf-high { background: linear-gradient(90deg, #52c41a, #73d13d); }
+.conf-mid { background: linear-gradient(90deg, #faad14, #ffc53d); }
+.conf-low { background: linear-gradient(90deg, #ff4d4f, #ff7875); }
+
+.predict-conf-num {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  min-width: 36px;
+}
+
+/* 多窗口预测 */
+.predict-windows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.predict-window-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.pw-label {
+  font-size: 12px;
+  color: #999;
+}
+
+.pw-value {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* AI 建议 */
+.predict-suggestion {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  background: #fffbe6;
+  border-radius: 8px;
+  border: 1px solid #ffe58f;
+  margin-bottom: 8px;
+}
+
+.predict-sug-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+.predict-sug-text {
+  font-size: 13px;
+  color: #595959;
+  line-height: 1.6;
+}
+
+/* 元数据 */
+.predict-meta {
+  font-size: 11px;
+  color: #bbb;
+  text-align: right;
+}
+
+/* ========== AI 聊天可折叠区域 ========== */
+
+.ai-chat-section {
+  margin-top: 20px;
+}
+
+.ai-chat-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+  user-select: none;
+}
+
+.ai-chat-toggle h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.ai-chat-toggle-icon {
+  font-size: 12px;
+  color: #1677ff;
+}
+
+.ai-chat-wrapper {
+  margin-top: 10px;
+}
+
+/* ========== 响应式：小屏单列 ========== */
+
+@media (max-width: 768px) {
+  .detail-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-core-metrics,
+  .detail-secondary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .holdings-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,132 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+}
+
+/* Header */
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 18px;
+  color: #1677ff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #1677ff;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.logo-btn:hover { background: #f0f7ff; }
+
+.version-tag {
+  background: #1677ff;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover { background: #f0f0f0; color: #333; }
+.nav-btn.active { background: #e6f0ff; color: #1677ff; font-weight: 600; }
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+
+/* 侧边栏 + 内容双栏布局 */
+.main-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; /* 防止 flex 子元素溢出 */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-content > section {
+  scroll-margin-top: 72px; /* 锚点滚动时留出 header + 间距 */
+}
+
+/* Footer */
+.app-footer {
+  background: #fff;
+  border-top: 1px solid #e8e8e8;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.footer-content {
+  font-size: 12px;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-primary:disabled { background: #91caff; cursor: not-allowed; }
+
+.footer-sep { color: #e0e0e0; }
+.footer-disclaimer { color: #ccc; }
+.footer-fetching { color: #1677ff; font-weight: 500; animation: pulse 1.5s ease-in-out infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
