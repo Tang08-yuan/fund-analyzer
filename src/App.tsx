@@ -33,7 +33,7 @@ function AppContent() {
       <div className="app">
         <header className="app-header">
           <div className="header-left">
-            <button className="logo-btn" onClick={handleBack}>基金分析助手</button>
+            <button className="logo-btn" onClick={handleBack}>基金分析助手 V1.2</button>
             <span className="version-tag">V1.2</span>
           </div>
         </header>
@@ -49,7 +49,7 @@ function AppContent() {
     <div className="app">
       <header className="app-header">
         <div className="header-left">
-          <h1 className="logo" onClick={() => setCurrentView('main')}>基金分析助手</h1>
+          <h1 className="logo" onClick={() => setCurrentView('main')}>基金分析助手 V1.2</h1>
           <span className="version-tag">V1.2</span>
         </div>
         <nav className="header-nav">

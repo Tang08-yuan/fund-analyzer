@@ -180,7 +180,7 @@ export default function AIChatPanel({ fund, allFunds }: Props) {
         {messages.length === 0 && (
           <div className="ai-welcome">
             <p className="ai-welcome-text">
-              👋 你好！我是 AI 基金分析助手，基于 Claude 驱动。
+              👋 你好！我是 AI 基金分析助手 V1.2，基于 Claude 驱动。
             </p>
             <p className="ai-welcome-sub">
               我可以帮你分析 <strong>{fund.name}</strong>（{fund.code}）的各项指标，回答你的投资疑问。
